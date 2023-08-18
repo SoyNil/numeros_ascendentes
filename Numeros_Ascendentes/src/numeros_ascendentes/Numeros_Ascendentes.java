@@ -6,17 +6,13 @@ public class Numeros_Ascendentes {
         // TODO code application logic here
         int i;
         int[] numeros = new int[5];
-
-        Scanner teclado = new Scanner(System.in);
-
         for(i=0; i<numeros.length; i++)
-        {
-            System.out.printf("Introduzca número %d: ", i+1);
-            numeros[i] = teclado.nextInt();
+        {   
+            numeros[i] = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el primer número"));
         }
-
         for(i=0; i<numeros.length; i++)
         {
             System.out.println(numeros[i]);
-    }}}
+        }
+}}
 
